@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 
-import { Layout, Menu, Icon } from 'antd';
+import { Layout, Menu } from 'antd';
+import { HomeOutlined } from '@ant-design/icons';
+
 
 import Counter from './Counter'
 
@@ -19,7 +21,7 @@ const App = () => {
         <div className="logo" />
         <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
           <Menu.Item key="1">
-            <Icon type="home" />
+            <HomeOutlined />
             <span>Counter</span>
           </Menu.Item>
 

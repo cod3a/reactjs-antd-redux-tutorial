@@ -1,6 +1,8 @@
 import React, { useCallback } from 'react';
 
 import { Row, Col, Card, Button } from 'antd';
+import { MinusOutlined, PlusOutlined } from '@ant-design/icons';
+
 import { useSelector, useDispatch } from 'react-redux';
 
 import { actionTypes } from '../redux';
@@ -27,13 +29,13 @@ const Counter = () => {
                 <Row>
                     <Col md={9} />
                     <Col md={2}>
-                        <Button size="large" icon="minus" shape="circle" onClick={decrement} />
+                        <Button size="large" icon={<MinusOutlined/>} shape="circle" onClick={decrement} />
                     </Col>
                     <Col md={2}>
                         <span style={{ fontSize: '2rem', fontWeight: 'bold' }}>{counter}</span>
                     </Col>
                     <Col md={2}>
-                        <Button size="large" icon="plus" shape="circle" onClick={increment} />
+                        <Button size="large" icon={<PlusOutlined/>} shape="circle" onClick={increment} />
                     </Col>
                     <Col md={9} />
                 </Row>
