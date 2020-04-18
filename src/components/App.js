@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 import { Layout, Menu } from 'antd';
-import { HomeOutlined } from '@ant-design/icons';
+import { HomeOutlined, CommentOutlined } from '@ant-design/icons';
 
 
 import Counter from './Counter'
@@ -23,6 +23,10 @@ const App = () => {
           <Menu.Item key="1">
             <HomeOutlined />
             <span>Counter</span>
+          </Menu.Item>
+          <Menu.Item key="2">
+            <CommentOutlined />
+            <span>Comments</span>
           </Menu.Item>
 
         </Menu>
